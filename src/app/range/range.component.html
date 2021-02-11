@@ -1,0 +1,3 @@
+<app-checkbox *ngFor="let value of healthRange$ | async; index as i"
+              [checked]="value"
+              (changeEvent)="test(i, $event)">
